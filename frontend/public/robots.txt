@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techzon.com/sitemap.xml

@@ -1,0 +1,83 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+
+### Added
+- Enterprise Database Models using Mongoose plugin architecture:
+  - `Category`
+  - `Service`
+  - `Portfolio`
+  - `Blog`
+  - `Team`
+  - `Testimonial`
+  - `Career`
+  - `Application`
+  - `Contact`
+  - `Newsletter`
+  - `Settings`
+  - `SEO`
+  - `Analytics`
+  - `FAQ`
+- Base Mongoose Plugin (`basePlugin.js`) implementing:
+  - Soft delete logic (`isDeleted`, `deletedAt`)
+  - Global query filtering
+  - Audit logging (`createdBy`, `updatedBy`)
+- Enterprise External Integrations:
+  - `CloudinaryService`: Secure media upload, deletion, replacement.
+  - `Upload Middleware`: Multer-based file filtering, size limits, and local temp storage.
+  - `EmailService`: Nodemailer SMTP integration pointing to Brevo relay with recursive retry logic.
+  - `sendEmail` utility wrapper to maintain backward compatibility with `authController`.
+- Enterprise Frontend Architecture:
+  - Scaffolding of Vite + React + Tailwind CSS + GSAP + ThreeJS
+  - Generated Techzon UI Design System (`index.css` custom properties, `tailwind.config.js`)
+  - Universal Axios instance with interceptors configured
+  - Dynamic routing layout components (`PublicLayout`, `AdminLayout`, `AuthLayout`)
+  - Scaffolded 20+ responsive, accessible, reusable UI components (`Button`, `Card`, `Badge`, `Input`, etc.)
+  - React Contexts injected for Global Theme and Authentication State
+- Home Page Phase 1 (Premium Enterprise Identity):
+  - `Navbar`: Sticky mega-menu with GSAP-style transparent-to-blur glassmorphic transition.
+  - `HeroCanvas`: Ultra-premium Three.js WebGL rendering an interactive Digital Globe with mouse parallax and floating nodes.
+  - `Hero`: Implemented Framer Motion animations with floating tech cards, scroll parallax, and split-text gradients using Deep Indigo and Electric Blue tokens.
+- Home Page Phase 2 (Trust & Statistics):
+  - `TrustedCompanies`: Framer Motion infinite SVG logo marquee that pauses on hover.
+  - `CompanyStatistics`: Intersection Observer triggered Framer Motion springs (`useSpring`, `useTransform`) for smooth CountUp functionality.
+  - `WhyChooseTechzon`: CSS Grid of glassmorphic premium feature cards with hover-induced gradient spotlights.
+  - `TechnologyPartners`: Staggered entrance animations featuring a flex-wrap array of industry-leading tech stack badges.
+- Home Page Phase 3 (Services & Process):
+  - `ServicesPreview`: Built 8 enterprise capability cards with icon scale effects and gradient hover blurs. Consumes `/api/v1/services`.
+  - `DevelopmentProcess`: Engineered a vertical GSAP-style timeline utilizing Framer Motion's `useScroll` and `useTransform` to paint the track down the viewport.
+  - `TechnologyStack`: Created an interactive AnimatePresence grid featuring a custom `onMouseMove` 3D-tilt physics hook for each technology node, and category filtering.
+- Home Page Phase 4 (Portfolio & Case Studies):
+  - `FeaturedPortfolio`: Masonry grid with lazy-loading images, gradient overlays, and hover zoom effects. Consumes `/api/v1/portfolio` via Axios.
+  - `FeaturedCaseStudies`: Enterprise storytelling cards using staggered ScrollTrigger parallax image transforms and alternating row alignments.
+  - `SuccessMetrics`: CountUp intersection observer KPI cards mapping strictly to primary and secondary UI gradients.
+- Home Page Phase 5 (Testimonials, Blog, FAQ, CTA, Footer):
+  - `ClientTestimonials`: Built a CSS `@keyframes` infinite marquee carousel mapping `/api/v1/testimonials` payloads into star-rated review cards.
+  - `LatestBlogs`: Grid mapping `/api/v1/blogs` featuring image zoom bounds and taxonomy badges.
+  - `FaqSection`: Framer Motion accordion toggles using `AnimatePresence` mapped to `/api/v1/faqs`.
+  - `FinalCTA`: Pure static enterprise conversion block with spinning, absolute-positioned blur-node animations (`rotate: 360` infinite loops).
+  - `Footer`: Global site map grid housing subscription inputs, contact metrics, and a dynamic Back-to-top handler.
+- Global Phase (About Page):
+  - Scaffolded `About.jsx` utilizing strict DRY principles by recycling `FinalCTA` and `Footer`. Added React Helmet advanced JSON-LD structured schema.
+  - `AboutHero`, `EnterpriseNumbers`, `CompanyStory`: Configured enterprise hero elements alongside counter matrices and interactive narrative layouts.
+  - `MissionVision`, `CoreValues`: Injected Lucide icon grids and hover-responsive glassmorphic UI cards.
+  - `LeadershipTeam`: Axios integrated component pulling from `GET /api/v1/team` with built-in network failure bounds.
+  - `CompanyTimeline`, `GlobalPresence`: Constructed GSAP-powered vertical timelines and Framer-animated SVG map coordinates.
+- Global Phase (Services Module):
+  - Architected the dual-route CMS-ready module (`/services` and `/services/:slug`).
+  - `ServicesDirectory`: Built an enterprise search, category, and grid/list filtering engine wired into `GET /api/v1/services`. Includes zero-CLS pagination bounds.
+  - `ServiceCard`: Standardized a highly reusable entry card utilizing Framer hover hooks and technology arrays.
+  - `ServiceDetails`: Scalable deep-dive template injecting dynamic parameters into GSAP-powered `ProcessTimeline`, `TechStack` grids, and `FeaturesGrid`.
+  - JSON-LD and OpenGraph React Helmet blocks dynamically inject SEO metadata based on CMS API resolution.
+- Global Phase (Portfolio Module):
+  - Engineered the CMS-first Portfolio registry (`/portfolio`) with extensive querying (Search, Category, Industry, Tech).
+  - Designed `PortfolioCard` to display quantitative data upfront alongside dynamic image parsing.
+  - Implemented `/portfolio/:slug` mapping `ProjectOverview`, `ProjectResults` (KPI grids), and `ProjectTechStack`.
+  - Constructed a high-performance Masonry Image Gallery utilizing CSS columns and a fully isolated Framer Motion Lightbox modal supporting keyboard hooks (`Esc`, `ArrowLeft`, `ArrowRight`).
+- Global Phase (Blog Module & UI Redesign):
+  - Engineered the Blog registry (`/blog`) and Article Details (`/blog/:slug`) with Sticky TOC, Rich Text Prose styling, and Newsletter integration.
+  - Executed a complete Global UI/UX Redesign shifting from a generic SaaS theme to a Luxury Enterprise Dark Theme without modifying underlying logic.
+  - Deployed `CustomCursor.jsx`, replacing native browser pointers with a Framer Motion magnetic follower featuring state-based expansion and contextual labels.
+  - Hardened CSS tokens in `src/index.css` leveraging frosted glass layers, deep indigo gradients, custom scrollbars, and `Plus Jakarta Sans` / `Inter` font pairings.
