@@ -7,7 +7,7 @@ export const Process = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Engineering Process | Techzon</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="Discover our 8-stage digital lifecycle and software engineering process." />
       </Helmet>
       

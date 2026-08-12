@@ -159,7 +159,7 @@ export const ProjectDetails = () => {
   return (
     <div className="w-full flex flex-col min-h-screen bg-white pt-24">
       <Helmet>
-        <title>{project.title} | Case Study</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content={project.shortDescription} />
       </Helmet>
       

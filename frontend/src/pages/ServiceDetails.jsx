@@ -56,7 +56,7 @@ export const ServiceDetails = () => {
   return (
     <div className="w-full flex flex-col min-h-screen">
       <Helmet>
-        <title>{service.name} | Techzon IT Solutions</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content={service.shortDescription} />
         <script type="application/ld+json">
           {`

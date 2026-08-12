@@ -13,7 +13,7 @@ export const About = () => {
   return (
     <PageTransition className="w-full flex flex-col min-h-screen">
       <Helmet>
-        <title>About Techzon | Digital Engineering Company</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="Learn about Techzon's engineering philosophy, our core values, and the expert team behind our world-class digital solutions." />
         {/* Basic schema for demonstration */}
         <script type="application/ld+json">

@@ -56,7 +56,7 @@ export const BlogDetails = () => {
   return (
     <div className="w-full flex flex-col min-h-screen">
       <Helmet>
-        <title>{blog.title} | Techzon Insights</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content={blog.excerpt || blog.summary} />
         <script type="application/ld+json">
           {`

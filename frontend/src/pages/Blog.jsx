@@ -10,7 +10,7 @@ export const Blog = () => {
   return (
     <PageTransition className="w-full flex flex-col min-h-screen">
       <Helmet>
-        <title>Technology Insights | Techzon</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="Read the latest technology insights, engineering articles, and best practices from Techzon." />
         <script type="application/ld+json">
           {`

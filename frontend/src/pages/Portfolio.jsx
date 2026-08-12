@@ -11,7 +11,7 @@ export const Portfolio = () => {
   return (
     <PageTransition className="w-full flex flex-col min-h-screen">
       <Helmet>
-        <title>Software Development Portfolio | Techzon</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="Explore Techzon's latest enterprise projects and digital transformations." />
         <script type="application/ld+json">
           {`

@@ -8,7 +8,7 @@ export const NotFound = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Page Not Found | Techzon</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="The page you are looking for does not exist." />
       </Helmet>
       

@@ -41,7 +41,7 @@ export const Contact = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Start Your Digital Project | Techzon</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="Contact Techzon to start your next digital engineering project." />
       </Helmet>
 

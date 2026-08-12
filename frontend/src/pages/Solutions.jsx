@@ -8,7 +8,7 @@ export const Solutions = () => {
   return (
     <PageTransition>
       <Helmet>
-        <title>Digital Technology Solutions | Techzon</title>
+        <title>Techzon IT Solutions</title>
         <meta name="description" content="Explore our enterprise software solutions, digital transformation strategies, and cloud modernization." />
       </Helmet>
       
