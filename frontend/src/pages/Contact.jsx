@@ -90,7 +90,7 @@ export const Contact = () => {
                       </div>
                       <div>
                         <div className="text-sm font-bold text-primary mb-1">Headquarters</div>
-                        <p className="text-foreground">Sector 6, HSR Layout, <br/>Bengaluru, Karnataka</p>
+                        <p className="text-foreground">Opposite Collector Office , <br/>Near SHIFA Hospital, <br/>Dindigul, TamilNadu</p>
                       </div>
                     </div>
                   </div>

@@ -127,7 +127,7 @@ export const Footer = () => {
                 <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center group-hover:bg-primary/20 transition-colors border border-gray-200 group-hover:border-primary/30">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
-                <span className="text-foreground text-sm font-medium">Sector 6, HSR Layout, Bengaluru, Karnataka </span>
+                <span className="text-foreground text-sm font-medium">Opposite Collector Office , Near SHIFA Hospital, Dindigul, TamilNadu</span>
               </div>
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center group-hover:bg-primary/20 transition-colors border border-gray-200 group-hover:border-primary/30">

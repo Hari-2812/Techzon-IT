@@ -127,7 +127,7 @@ export const FooterSection = () => {
                 <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center border border-slate-100">
                   <MapPin className="w-4 h-4 text-muted-foreground" />
                 </div>
-                <span className="text-foreground text-sm font-medium">Sector 6, HSR Layout, Bengaluru, Karnataka </span>
+                <span className="text-foreground text-sm font-medium">Opposite Collector Office , Dindigul </span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center border border-slate-100">
